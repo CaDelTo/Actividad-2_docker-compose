@@ -8,6 +8,7 @@ services:
     volumes:
       - ./results:/app/results
       - ../Actividad-2_codigos/python/main.py:/app/main.py
+    command: ["python", "main.py"]
 
   java_app:
     image: openjdk:17-slim

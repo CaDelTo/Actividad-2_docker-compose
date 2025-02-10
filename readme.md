@@ -10,8 +10,7 @@
 2️⃣ **Clonar ambos repositorios en Play with Docker**  
    ```bash
    git clone https://github.com/CaDelTo/Actividad-2_docker-compose.git
-   git clone 
-   cd Actividad-2_docker-compose 
+   git clone https://github.com/CaDelTo/Actividad-2_codigos.git
    ```
 
 3️⃣ **Ejecutar los contenedores**
@@ -21,5 +20,9 @@
    docker-compose up    
    ```
 
+   Al momento de hacer el up de los contenedores se ejecutaran automaticamente los codigos
+
+4️⃣ **Ver los resultados**
+   
 
     
