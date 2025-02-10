@@ -41,3 +41,16 @@ services:
     volumes:
       - ./results:/app/results
       - ../Actividad-2_codigos/go/main.go:/app/main.go
+  results_collector:
+    image: alpine
+    container_name: results_collector
+    working_dir: /app
+    volumes:
+      - ./results:/app/results
+    command: ["/bin/sh", "-c", "sleep 5 && cat /app/results/results.txt | sort -k2 -n | awk '{printf \"%-15s %s ms\\n\", $1, $2}'"]
+    depends_on:
+      - python_app
+      - java_app
+      - cpp_app
+      - javascript_app
+      - go_app
