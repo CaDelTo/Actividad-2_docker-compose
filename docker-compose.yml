@@ -26,7 +26,7 @@ services:
     volumes:
       - ./results:/app/results
       - ../Actividad-2_codigos/cpp/main.cpp:/app/main.cpp
-    command: ["/app/main.cpp"]
+    command: sh -c "g++ -o main main.cpp && ./main"
 
   javascript_app:
     image: node:18-alpine
