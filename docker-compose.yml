@@ -17,7 +17,7 @@ services:
     volumes:
       - ./results:/app/results
       - ../Actividad-2_codigos/java/Main.java:/app/Main.java
-    command: ["java", "-jar", "Main.java"]
+    command: ["java", "-jar", "Main.jar"]
 
   cpp_app:
     image: gcc:latest
@@ -44,4 +44,4 @@ services:
     volumes:
       - ./results:/app/results
       - ../Actividad-2_codigos/go/main.go:/app/main.go
-    command: ["/app/main.go"]
+    command: sh -c "chmod +x main.go && go run main.go"
