@@ -15,7 +15,7 @@ services:
     container_name: java_app
     working_dir: /app
     volumes:
-      - ./results:/app/results
+      - ./results.txt:/app/results.txt
       - ../Actividad-2_codigos/java/Main.java:/app/Main.java
 
   cpp_app:
@@ -23,7 +23,7 @@ services:
     container_name: cpp_app
     working_dir: /app
     volumes:
-      - ./results:/app/results
+      - ./results.txt:/app/results.txt
       - ../Actividad-2_codigos/cpp/main.cpp:/app/main.cpp
 
   javascript_app:
@@ -31,7 +31,7 @@ services:
     container_name: javascript_app
     working_dir: /app
     volumes:
-      - ./results:/app/results
+      - ./results.txt:/app/results.txt
       - ../Actividad-2_codigos/javascript/main.js:/app/main.js
 
   go_app:
@@ -39,14 +39,14 @@ services:
     container_name: go_app
     working_dir: /app
     volumes:
-      - ./results:/app/results
+      - ./results.txt:/app/results.txt
       - ../Actividad-2_codigos/go/main.go:/app/main.go
   results_collector:
     image: alpine
     container_name: results_collector
     working_dir: /app
     volumes:
-      - ./results:/app/results
+      - ./results.txt:/app/results.txt
     command: ["/bin/sh", "-c", "sleep 5 && cat /app/results/results.txt | sort -k2 -n | awk '{printf \"%-15s %s ms\\n\", $1, $2}'"]
     depends_on:
       - python_app
