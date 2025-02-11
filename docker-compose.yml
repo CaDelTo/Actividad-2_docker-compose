@@ -50,7 +50,7 @@ services:
     working_dir: /app
     volumes:
       - ./results:/app/results
-      - ../Actividad-2_codigos/benchmark:/app/
+      - ../Actividad-2_codigos/benchmark:/app
     command: ["python", "benchmark.py"]
     depends_on:
       - python_app
