@@ -27,5 +27,18 @@
 
 4️⃣ **Ver los resultados**
    
+   Una vez que los contenedores hayan finalizado su ejecución se imprimira el tiempo en milisegundos, los resultados estarán disponibles en la carpeta `results/`.
+
+---
+## 📌 **Integrantes del grupo**
+
+- [Camilo Andres Del Toro Trillos](https://github.com/CaDelTo)
+- [Anghely Andrea Ramos Estevez](https://github.com/Angeramos)
+
+## Repositorio codigos
+
+ - 📂[Actividad-2_codigos](https://github.com/CaDelTo/Actividad-2_codigos) - https://github.com/CaDelTo/Actividad-2_codigos
+
+
 
     
