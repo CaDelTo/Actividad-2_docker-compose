@@ -29,7 +29,12 @@
    
    Una vez que los contenedores hayan finalizado su ejecución se imprimira el tiempo en milisegundos, los resultados estarán disponibles en la carpeta `results/`.
 
----
+## 📌 Lenguajes utilizados
+- Python
+- Java
+- C++
+- JavaScript (Node.js)
+- Go
 ## 📌 **Integrantes del grupo**
 
 - [Camilo Andres Del Toro Trillos](https://github.com/CaDelTo)
