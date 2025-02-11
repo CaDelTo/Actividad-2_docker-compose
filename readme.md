@@ -21,7 +21,7 @@
    cd Actividad-2_docker-compose
    ```
    ```bash
-   docker-compose up    
+   docker-compose up --build   
    ```
    Al momento de hacer el up de los contenedores se ejecutaran automaticamente los codigos
 
